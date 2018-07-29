@@ -8,8 +8,8 @@ xunlzip 은 lzma 기반의 압축 포맷인 lzip 파일의 압축 해제 소스�
 
 개발 과정에서 다음 문서들을 참고하였습니다.
 
-https://www.nongnu.org/lzip/manual/lzip_manual.html#Stream-format
-https://www.7-zip.org/a/lzma-specification.7z
-https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm
+1. https://www.nongnu.org/lzip/manual/lzip_manual.html#Stream-format
+2. https://www.7-zip.org/a/lzma-specification.7z
+3. https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm
 
 
