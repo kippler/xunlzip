@@ -13,6 +13,8 @@ xunlzip 은 lzma 기반의 압축 포맷인 lzip 파일의 압축 해제 소스�
 3. https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm
 
 
+컴파일러는 VS2017 이 필요합니다. https://visualstudio.microsoft.com/
+
 
 ## lzip 포맷에 관하여 
 lzip 포맷은 lzma 스트림의 앞과 뒤에 간단한 데이타가 붙어있는 포맷입니다.
