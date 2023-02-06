@@ -19,3 +19,11 @@ src/x64/Debug/xunlzip_test.nativecodeanalysis.xml
 src/x64/Debug/xunlzip_test.ilk
 src/x64/Debug/xunlzip_test.exe.lastcodeanalysissucceeded
 src/x64/Debug/xunlzip_test.exe
+
+
+.vs
+
+Debug
+
+Release
+

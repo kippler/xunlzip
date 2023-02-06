@@ -112,7 +112,7 @@ bool XLzmaDec::Init(XReadStream* in, XWriteStream* out, uint32_t dicSize, const 
 	// 포지션 문맥 만들기
 	// 각 스테이트 뿐만 아니라, 디코딩된 위치도 문맥을 결정하는 요소이다. 왜 그랬을까?
 	const int pos_states = (1 << prop.pb);
-	m_probIsMatch = new XProb[LZMA_STATES * pos_states];
+	m_probIsMatch = new XProb[(size_t)LZMA_STATES * pos_states];
 
 
 	// 리터럴 문맥 만들기 - LZIP 은 3 으로 고정이지만, LZMA 는 lc, lp 에 따라 바뀜
@@ -121,7 +121,7 @@ bool XLzmaDec::Init(XReadStream* in, XWriteStream* out, uint32_t dicSize, const 
 	// The LZMA Decoder uses(1 << (lc + lp)) tables with CProb values, where each table contains 0x300 CProb values :	
 	//
 	// lc 는 literal_context_bits 이고, lp 는 literal_pos_state 인데, 0x300 은 LITERAL_TREE_SIZE
-	m_probLiteral = new XProb[(uint32_t)LITERAL_TREE_SIZE << (prop.lc + prop.lp)];
+	m_probLiteral = new XProb[(size_t)LITERAL_TREE_SIZE << (prop.lc + prop.lp)];
 
 
 	return true;

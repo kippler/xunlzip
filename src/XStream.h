@@ -20,11 +20,6 @@
 # define PURE = 0
 #endif
 
-#if (_MSC_VER == 1500 )		// 1500 == vs2008
-#	define final			
-#	define noexcept
-#endif
-
 #define EOF    (-1)
 class XBuffer;
 
