@@ -139,8 +139,8 @@ public :
 	enum { LEN_BUF = 8192 };
 	HANDLE	m_handle;
 	BYTE*	m_buf;
-	BYTE*	m_left;					// m_buf 내 현재 데이타 시작 위치.
-	BYTE*	m_right;				// m_buf 내 유효한 데이타 끝 위치-1
+	BYTE*	m_left;					// m_buf 내 현재 데이터 시작 위치.
+	BYTE*	m_right;				// m_buf 내 유효한 데이터 끝 위치-1
 
 	INT64	m_virtPos;				// 가상의 파일 포인터
 	INT64	m_size;
@@ -355,7 +355,7 @@ public:
 
 public:
 	BYTE*	data;
-	int		dataSize;		// 버퍼의 유효한 데이타 크기 - 서로 크기를 주고받을때 사용한다.
+	int		dataSize;		// 버퍼의 유효한 데이터 크기 - 서로 크기를 주고받을때 사용한다.
 	int		allocSize;		// 버퍼의 alloc된 크기
 };
 
